@@ -1,0 +1,46 @@
+Team Members:
+Sree Lakshmi Nerella(1211198167)
+Apoorva Venkatesh(1211173480)
+
+Public ip:52.32.98.46/cloud.php?input=value
+
+
+For start.sh to run:
+
+Install python
+Install boto
+It has a python script which will start the web tier 
+
+
+For stop.sh to run:
+
+Install python
+Install boto
+It has a python script which will start the web tier 
+
+For list_instances.sh to run:
+
+Install python
+Install boto
+It has a python script which will start the web tier 
+
+For list_data.sh to run:
+
+Install java sdk
+Change to /path/to/folder with aws sdk (version as 1.11.93/92 based on the installed sdk)
+
+
+Additional Notes:
+
+1)We have 10 threads which will run to accept input from the user and compute the value of pi
+2)10 threads always run but not the instances.
+3)We have used gnome to display the 10 threads running so that it will be easy to visualize.
+4)As soon as you run the start.py,there will be 10 terminals displayed on your system(BUT INSTANCES ARE NOT YET STARTED)
+5)Used rabbit mq for queueing the inputs and not SQS.
+6)As soon as the insatnce is created and before ssh into the instance we have given a delay of 60 second so that even if the net is slow,it won't run into problems and hence the output got is DELAYED BY A MINUTE.(SLOW OUTPUT BECAUSE OF SLEEP AND NOT THE LOGIC).
+7)App tier instances are created only on demand(Initially only a web tier instance is created and an S3 Bucket).
+
+
+
+
+
